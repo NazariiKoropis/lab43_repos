@@ -5,14 +5,20 @@
 int main() {
     double x_start, x_end, x_step;
 
-    std::cout << "X_start = "; std::cin >> x_start;
-    std::cout << "x_end = "; std::cin >> x_end;
-    std::cout << "x_step = "; std::cin >> x_step;
+    std::cout << "X_start = "; 
+    std::cin >> x_start;
+    std::cout << "x_end = "; 
+    std::cin >> x_end;
+    std::cout << "x_step = "; 
+    std::cin >> x_step;
 
     double a, b, c;
-	std::cout << "a = "; std::cin >> a;
-	std::cout << "b = "; std::cin >> b;
-	std::cout << "c = "; std::cin >> c;
+	std::cout << "a = ";
+    std::cin >> a;
+	std::cout << "b = "; 
+    std::cin >> b;
+    std::cout << "c = ";
+    std::cin >> c;
 
     std::cout << std::fixed;
     std::cout << "---------------------------" << std::endl;
@@ -26,7 +32,7 @@ int main() {
             F = a * std::pow(x + 7, 2) - b;
         }
         else if (x > 5 && b == 0) {
-            F = (x - c * a) / a * x;
+            F = (x - c * a) / (a * x);
         }
         else {
 			F = x / c;
